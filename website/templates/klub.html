@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block title %} Opevnění Milostovice - Klub {% endblock %}
+
+{% block galleries %}
+  {% for gallery in galleries %}
+  <li><a class="dropdown-item" href="/galerie/{{gallery.name}}">{{gallery.name}}</a></li>
+  {% endfor %}
+{% endblock galleries %}
+
+{% block content %}
+
+<div class="container fade-in">
+    <div class="m-3 border rounded border-4" style="background-color: rgb(250, 250, 250)">
+        <h1 class="text-center m-3 mt-4 mb-4">Klub vojenské historie Opava</h1>
+        <div class="m-3 mx-lg-5">KVH Opava je spolkem, který sdružuje zájemce o vojenskou historii naší armády, zejména v období před rokem 1938. Těžištěm činnosti je údržba několika staveb bývalého opevnění a tvorba muzejní expozice v těžkém objektu číslo 25 „U Trigonometru“, opavského stavebního úseku.</div>
+        <div class="m-3 mx-lg-5">Klub byl založen v roce 1995, jako občanské sdružení. V roce 1998 se, na základě písemného svolení tehdejšího Ministerstva obrany, rozvinuly na plné obrátky rekonstrukční snahy členů KVH Opava. Od počátku bylo cílem udržet pro budoucí generace, v co nejlepší kondici, soubor objektů československého opevnění v prostoru Opavy – Milostovic. Malá skupina nadšenců se záhy rozrostla o další kolegy z mimo opavských končin – z Bohumína, z Ostravy, Kroměříže, dokonce jeden z lehkých objektů začali rekonstruovat externisté ze Zlína.</div>
+        <div class="m-3 mx-lg-5">V rámci klubových aktivit byly pořádány tematické expedice za vojenskými zajímavostmi po celé Evropě. Namátkou lze zmínit návštěvy Maginotovy linie, opevnění v Polsku, Atlantického valu apod. Rovněž se začala vytvářet historická jednotka KVH Opava, která nejprve představovala pouze vojáky tzv. první republiky. S přibývajícím časem se však rozrostla i o další uniformované složky.</div>
+        <div class="m-3 mx-lg-5">V letech 2002 až 2014, pořádal klub řadu tzv. bojových ukázek, případně se členové účastnili akcí pořádaných nadšenci v jiných místech naší republiky i zahraničí. V první, skutečně velké představení, se rozrostla ukázka v roce 2003, uspořádaná jako Cvičení armády Republiky československé. Nezapomenutelným se stal nálet skutečného letounu na objekt OP-S 25 doprovázený efekty pozemních explozí, což se do té doby jinde nerealizovalo. V každém dalším roce, až do roku 2014, se pak organizátoři KVH Opava snažili něčím novým upoutat příchozí návštěvníky.</div>
+        <div class="m-3 mx-lg-5">Počet členů se rozrostl v dalším období až ke dvěma desítkám. V roce 2008 vstoupila většina členů do Československé obce legionářské a otevřel se tak další obzor pro činnost a naplňování cílů. Od března 2009 je objekt OP-S 25 prohlášen Kulturní památkou.</div>
+        <div class="m-3 mx-lg-5">Během více než dvaceti let působení klubu, pevnost navštívila spousta významných osobností, jako například armádní generál Armády České republiky Pavel Štefka nebo první rada francouzského velvyslanectví v Praze Nicolas de Lacoste, předseda Rady departementu Eure Sebastien Lecornu či prefekt Philippe Gustin. Navázána byla velice úspěšná spolupráce s vojenským muzeem Oscarsborg v Norsku, kde členové klubu pomáhali revitalizovat kanony pobřežního dělostřelectva.</div>
+        <div class="m-3 mx-lg-5">V roce 2012 byl zakladatel a předseda Klubu vojenské historie Opava Pavel Chráska, za zachování kulturně historického dědictví vojenských tradic, oceněn celostátní cenou Český patriot.</div>
+        <div class="m-3 mx-lg-5">Členové klubu se účastní mnoha vzpomínkových a pietních akcí. Zahráli si ve filmech 7 dní hříchu a Protektor, kde bylo možné spatřit také objekt číslo 25, ale i v řadě dalších dokumentů, např. pořad české televize Toulavá kamera. Šumperská kapela Snaefell zde, mimo jiné lokality, natáčela záběry pro videoklip k písni Věrní zůstanem.</div>
+        <div class="m-3 mx-lg-5">Dnes patří OP-S 25 k nejvíce vybaveným objektům v ČR. Lze zhlédnout funkční vzduchotechnické zařízení či rozvod vody, vystrojené ubikace a plně vyzbrojené bojové prostory. Jedná se o první objekt v dějinách čs. pevnostního muzejnictví, kde jsou ve střeleckých místnostech osazeny dva kompletní pevnostní kanony Škoda vz. 36, tedy  L1. Naprostým unikátem zdejší lokality je počet dochovaných pancéřových prvků – střílen a zvonů.</div>
+    </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,3 @@
+apps = config
+views = request handler
+templates = html

@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+{% block title %} Opevnění Milostovice - {{gallery_name}} {% endblock %}
+
+{% block galleryactive %}active{% endblock galleryactive %}
+
+{% block galleries %}
+  {% for gallery in galleries %}
+  <li><a class="dropdown-item" href="/galerie/{{gallery.name}}">{{gallery.name}}</a></li>
+  {% endfor %}
+{% endblock galleries %}
+
+{% block content %}
+
+<div class="container-fluid text-center">
+    <h1 class="my-3">{{gallery_name}}</h1>
+
+    <div class="row row-cols-1 row-cols-xl-4 row-cols-lg-3 row-cols-md-2 m-1 mb-3">
+        {% for img in gallery_images %}
+        <div style="margin-top: auto; margin-bottom: auto;">
+            <div class="col my-2">
+                <div class="card h-0 border border-2 rounded-3">
+                    <a href="{{gallery_name}}/{{img.image.name}}">
+                        <img src="{{img.image.url}}" class="card-img-top">
+                    </a>
+                    <div class="card-body my-0 py-1">
+                        <p class="card-text">{{img.description}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
+
+
+{% endblock %}
